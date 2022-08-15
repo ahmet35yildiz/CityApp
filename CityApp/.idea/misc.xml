@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ahmet/AndroidStudioProjects/CityApp/app/src/main/res/layout/activity_main.xml" value="0.371875" />
-        <entry key="..\:/Users/ahmet/AndroidStudioProjects/CityApp/app/src/main/res/layout/card_design_weather.xml" value="0.29528985507246375" />
+        <entry key="..\:/Users/ahmet/AndroidStudioProjects/CityApp/app/src/main/res/drawable/sun_image.xml" value="0.1285" />
+        <entry key="..\:/Users/ahmet/AndroidStudioProjects/CityApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/ahmet/AndroidStudioProjects/CityApp/app/src/main/res/layout/fragment_fuel.xml" value="0.33" />
-        <entry key="..\:/Users/ahmet/AndroidStudioProjects/CityApp/app/src/main/res/layout/fragment_pharmacy.xml" value="0.27890625" />
-        <entry key="..\:/Users/ahmet/AndroidStudioProjects/CityApp/app/src/main/res/layout/fragment_weather.xml" value="0.29528985507246375" />
+        <entry key="..\:/Users/ahmet/AndroidStudioProjects/CityApp/app/src/main/res/layout/fragment_homepage.xml" value="0.33" />
+        <entry key="..\:/Users/ahmet/AndroidStudioProjects/CityApp/app/src/main/res/layout/fragment_pharmacy.xml" value="0.33" />
+        <entry key="..\:/Users/ahmet/AndroidStudioProjects/CityApp/app/src/main/res/layout/fragment_weather.xml" value="0.33" />
       </map>
     </option>
   </component>

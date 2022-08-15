@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homepageFragment">
+
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.example.cityapp.fragment.HomepageFragment"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/weatherTransition"
+            app:destination="@id/weatherFragment" />
+        <action
+            android:id="@+id/pharmacyTransition"
+            app:destination="@id/pharmacyFragment" />
+        <action
+            android:id="@+id/fuelTransition"
+            app:destination="@id/fuelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.cityapp.fragment.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/pharmacyFragment"
+        android:name="com.example.cityapp.fragment.PharmacyFragment"
+        android:label="fragment_pharmacy"
+        tools:layout="@layout/fragment_pharmacy" />
+    <fragment
+        android:id="@+id/fuelFragment"
+        android:name="com.example.cityapp.fragment.FuelFragment"
+        android:label="fragment_fuel"
+        tools:layout="@layout/fragment_fuel" />
+</navigation>
