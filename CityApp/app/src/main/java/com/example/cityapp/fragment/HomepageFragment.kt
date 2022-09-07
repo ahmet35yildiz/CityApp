@@ -17,21 +17,27 @@ class HomepageFragment : Fragment() {
         savedInstanceState: Bundle?): View? {
         binding = FragmentHomepageBinding.inflate(inflater, container, false)
 
-        binding.toolbarHomepage.title = "CityApp"
-        binding.cardViewWeather.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.weatherTransition)
-        }
-
         val adapterSpinner = ArrayAdapter.createFromResource(requireContext(),
             R.array.cityList,android.R.layout.simple_spinner_item)
         adapterSpinner.setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item)
-        binding.spinner.adapter = adapterSpinner
 
-        binding.buttonCitySelect.setOnClickListener {
-            Snackbar.make(it,"${binding.spinner.selectedItem.toString().toLowerCase()} seçildi !",
-                Snackbar.LENGTH_SHORT).show()
+        with(binding){
+            toolbarHomepage.title = "CityApp"
+            spinner.adapter = adapterSpinner
+            cardViewWeather.setOnClickListener {
+                Navigation.findNavController(it).navigate(R.id.weatherTransition)
+            }
+            cardViewFuel.setOnClickListener {
+                Navigation.findNavController(it).navigate(R.id.fuelTransition)
+            }
+            cardViewPharmacy.setOnClickListener {
+                Navigation.findNavController(it).navigate(R.id.pharmacyTransition)
+            }
+            buttonCitySelect.setOnClickListener {
+                Snackbar.make(it,"${binding.spinner.selectedItem.toString().toLowerCase()} seçildi !",
+                    Snackbar.LENGTH_SHORT).show()
+            }
         }
-
         return binding.root
     }
 }
