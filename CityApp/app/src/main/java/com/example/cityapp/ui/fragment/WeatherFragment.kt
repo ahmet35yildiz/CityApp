@@ -13,7 +13,9 @@ import com.example.cityapp.ui.adapter.WeatherAdapter
 import com.example.cityapp.databinding.FragmentWeatherBinding
 import com.example.cityapp.data.entity.WeatherInfo
 import com.example.cityapp.ui.viewmodel.WeatherFragmentViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class WeatherFragment : Fragment() {
     private lateinit var binding: FragmentWeatherBinding
     private lateinit var viewModel: WeatherFragmentViewModel

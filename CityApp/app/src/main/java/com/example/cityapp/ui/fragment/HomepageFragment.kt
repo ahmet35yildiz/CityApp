@@ -13,8 +13,10 @@ import androidx.navigation.Navigation
 import com.example.cityapp.R
 import com.example.cityapp.databinding.FragmentHomepageBinding
 import com.example.cityapp.ui.viewmodel.HomepageFragmentViewModel
+import com.example.cityapp.util.useTransition
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class HomepageFragment : Fragment() {
     private lateinit var binding: FragmentHomepageBinding
     private lateinit var viewModel: HomepageFragmentViewModel
@@ -48,12 +50,12 @@ class HomepageFragment : Fragment() {
         viewModel.select(selectedCity)
     }
     fun weatherTransition(v:View){
-        Navigation.findNavController(v).navigate(R.id.weatherTransition)
+        Navigation.useTransition(v,R.id.weatherTransition)
     }
     fun fuelTransition(v:View){
-        Navigation.findNavController(v).navigate(R.id.fuelTransition)
+        Navigation.useTransition(v,R.id.fuelTransition)
     }
     fun pharmacyTransition(v:View){
-        Navigation.findNavController(v).navigate(R.id.pharmacyTransition)
+        Navigation.useTransition(v,R.id.pharmacyTransition)
     }
 }

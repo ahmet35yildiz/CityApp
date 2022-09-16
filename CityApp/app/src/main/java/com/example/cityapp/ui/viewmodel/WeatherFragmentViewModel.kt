@@ -4,9 +4,12 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.cityapp.data.entity.WeatherInfo
 import com.example.cityapp.data.repo.CityDaoRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class WeatherFragmentViewModel : ViewModel(){
-    val cRepo = CityDaoRepository()
+@HiltViewModel
+class WeatherFragmentViewModel @Inject constructor (var cRepo:CityDaoRepository) : ViewModel(){
+
     var weatherList = MutableLiveData<List<WeatherInfo>>()
 
     init {
