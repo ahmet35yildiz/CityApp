@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="weatherObject"
+            type="com.example.cityapp.data.entity.WeatherInfo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageViewWeatherIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewMaxDegree"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewMax"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textViewMax"
+                    app:srcCompat="@drawable/sun_image" />
+
+                <TextView
+                    android:id="@+id/textViewMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="MAX"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewMaxDegree"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewMin"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewWeatherIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewMaxDegree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@{weatherObject.weatherMaxDegree}"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewMax"
+                    app:layout_constraintStart_toStartOf="@+id/textViewMax"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMax" />
+
+                <TextView
+                    android:id="@+id/textViewMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="MIN"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewMinDegree"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textViewMax"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewMinDegree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@{weatherObject.weatherMinDegree}"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewMin"
+                    app:layout_constraintStart_toStartOf="@+id/textViewMin"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMin" />
+
+                <TextView
+                    android:id="@+id/textViewDayWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@{weatherObject.weatherDay}"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewDateWeather"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMaxDegree" />
+
+                <TextView
+                    android:id="@+id/textViewDateWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@{weatherObject.weatherDate}"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textViewDayWeather"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMaxDegree" />
+
+                <TextView
+                    android:id="@+id/textViewHumidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text='@{"Humidity: "+weatherObject.weatherHumidity+"%"}'
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDayWeather" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>
