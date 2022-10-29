@@ -27,8 +27,8 @@ An application that presents the weather and pharmacy information on duty accord
 • Splash Screen
 ## Screenshots
 
-![Uygulama Ekran Görüntüsü](https://i.ibb.co/D585H6M/1.png)      ![Uygulama Ekran Görüntüsü](https://i.ibb.co/T0gqcCy/2.png)     ![Uygulama Ekran Görüntüsü](https://i.ibb.co/QJ9fSnQ/3.png)
+![Uygulama Ekran Görüntüsü](https://i.ibb.co/D585H6M/1.png) ![Uygulama Ekran Görüntüsü](https://i.ibb.co/T0gqcCy/2.png) ![Uygulama Ekran Görüntüsü](https://i.ibb.co/QJ9fSnQ/3.png)
 
 
 
-![Uygulama Ekran Görüntüsü](https://i.ibb.co/DzT8MxR/4.png)      ![Uygulama Ekran Görüntüsü](https://i.ibb.co/VTdzsyd/5.png)     ![Uygulama Ekran Görüntüsü](https://i.ibb.co/Dpc1bNg/6.png)
+![Uygulama Ekran Görüntüsü](https://i.ibb.co/DzT8MxR/4.png) ![Uygulama Ekran Görüntüsü](https://i.ibb.co/VTdzsyd/5.png) ![Uygulama Ekran Görüntüsü](https://i.ibb.co/Dpc1bNg/6.png)
