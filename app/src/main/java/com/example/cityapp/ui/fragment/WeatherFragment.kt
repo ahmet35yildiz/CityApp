@@ -1,5 +1,6 @@
 package com.example.cityapp.ui.fragment
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +22,8 @@ class WeatherFragment : Fragment() {
 
     private val viewModel: WeatherFragmentViewModel by viewModels()
 
+    private lateinit var sharedPref: SharedPreferences
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -33,6 +36,8 @@ class WeatherFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        sharedPref = requireActivity().getSharedPreferences(HomepageFragment.PREFS_FILENAME, 0)
+
         viewModel.weatherList.observe(viewLifecycleOwner) {
             with(binding) {
                 weatherFragment = this@WeatherFragment
@@ -42,7 +47,12 @@ class WeatherFragment : Fragment() {
                     weatherAdapter = adapter
                     animationLoading.visibility = View.GONE
                     animationError.visibility = View.GONE
-                } else {
+                }
+                else if (sharedPref.getString(HomepageFragment.PREF_KEY_CITY, "") == "") {
+                    animationLoading.visibility = View.GONE
+                    animationError.visibility = View.GONE
+                }
+                else {
                     animationLoading.visibility = View.GONE
                     animationError.visibility = View.VISIBLE
                     showSnackbar(view,"Bir hata oluştu, lütfen daha sonra tekrar deneyiniz.")
