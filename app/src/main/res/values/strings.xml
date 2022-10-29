@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">SuperCityApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialogTitle">Deneme Başlık</string>
+    <string name="dialogNeutral">İptal</string>
+    <string name="dialogPositive">Tamam</string>
+    <string-array name="cityList">
+        <item>ADANA</item>
+        <item>ADIYAMAN</item>
+        <item>AFYONKARAHİSAR</item>
+        <item>AĞRI</item>
+        <item>AMASYA</item>
+        <item>ANKARA</item>
+        <item>ANTALYA</item>
+        <item>ARTVİN</item>
+        <item>AYDIN</item>
+        <item>BALIKESİR</item>
+        <item>BİLECİK</item>
+        <item>BİNGÖL</item>
+        <item>BİTLİS</item>
+        <item>BOLU</item>
+        <item>BURDUR</item>
+        <item>BURSA</item>
+        <item>ÇANAKKALE</item>
+        <item>ÇANKIRI</item>
+        <item>ÇORUM</item>
+        <item>DENİZLİ</item>
+        <item>DİYARBAKIR</item>
+        <item>EDİRNE</item>
+        <item>ELAZIĞ</item>
+        <item>ERZİNCAN</item>
+        <item>ERZURUM</item>
+        <item>ESKİŞEHİR</item>
+        <item>GAZİANTEP</item>
+        <item>GİRESUN</item>
+        <item>GÜMÜŞHANE</item>
+        <item>HAKKARİ</item>
+        <item>HATAY</item>
+        <item>ISPARTA</item>
+        <item>MERSİN</item>
+        <item>İSTANBUL</item>
+        <item>İZMİR</item>
+        <item>KARS</item>
+        <item>KASTAMONU</item>
+        <item>KAYSERİ</item>
+        <item>KIRKLARELİ</item>
+        <item>KIRŞEHİR</item>
+        <item>KOCAELİ</item>
+        <item>KONYA</item>
+        <item>KÜTAHYA</item>
+        <item>MALATYA</item>
+        <item>MANİSA</item>
+        <item>KAHRAMANMARAŞ</item>
+        <item>MARDİN</item>
+        <item>MUĞLA</item>
+        <item>MUŞ</item>
+        <item>NEVŞEHİR</item>
+        <item>NİĞDE</item>
+        <item>ORDU</item>
+        <item>RİZE</item>
+        <item>SAKARYA</item>
+        <item>SAMSUN</item>
+        <item>SİİRT</item>
+        <item>SİNOP</item>
+        <item>SİVAS</item>
+        <item>TEKİRDAĞ</item>
+        <item>TOKAT</item>
+        <item>TRABZON</item>
+        <item>TUNCELİ</item>
+        <item>ŞANLIURFA</item>
+        <item>UŞAK</item>
+        <item>VAN</item>
+        <item>YOZGAT</item>
+        <item>ZONGULDAK</item>
+        <item>AKSARAY</item>
+        <item>BAYBURT</item>
+        <item>KARAMAN</item>
+        <item>KIRIKKALE</item>
+        <item>BATMAN</item>
+        <item>ŞIRNAK</item>
+        <item>BARTIN</item>
+        <item>ARDAHAN</item>
+        <item>IĞDIR</item>
+        <item>YALOVA</item>
+        <item>KARABÜK</item>
+        <item>KİLİS</item>
+        <item>OSMANİYE</item>
+        <item>DÜZCE</item>
+
+    </string-array>
+</resources>

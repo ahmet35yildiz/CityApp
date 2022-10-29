@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="pharmacyObject"
+            type="com.example.cityapp.data.entity.PharmacyInfo" />
+
+        <variable
+            name="pharmacyAdapter"
+            type="com.example.cityapp.ui.adapter.PharmacyAdapter" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/notWhite">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/gradient"
+            android:padding="10dp"
+            app:cardCornerRadius="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient">
+
+                <TextView
+                    android:id="@+id/textViewPharmacyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text='@{"Eczane Adı: "+pharmacyObject.pharmacyName}'
+                    android:textColor="#FEFEFE"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewPharmacyDistrict"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewPharmacyDistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text='@{"İlçe: "+pharmacyObject.pharmacyDistrict}'
+                    android:textColor="#FEFEFE"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewPharmacyAddress"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewPharmacyName" />
+
+                <TextView
+                    android:id="@+id/textViewPharmacyAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text='@{"Adres: "+pharmacyObject.pharmacyAddress}'
+                    android:textColor="#FEFEFE"
+                    app:layout_constraintBottom_toTopOf="@+id/textViewPharmacyPhone"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonDirections"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewPharmacyDistrict" />
+
+                <TextView
+                    android:id="@+id/textViewPharmacyPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text='@{"Tel: "+pharmacyObject.pharmacyPhone}'
+                    android:textColor="#FEFEFE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewPharmacyAddress" />
+
+                <Button
+                    android:id="@+id/buttonDirections"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/fontColor"
+                    android:fontFamily="sans-serif-black"
+                    android:text="YOL TARİFİ"
+                    android:textColor="@color/notWhite"
+                    app:cornerRadius="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>
