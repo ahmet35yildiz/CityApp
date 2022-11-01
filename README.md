@@ -25,6 +25,10 @@ An application that presents the weather and pharmacy information on duty accord
 • Shared Preferences
 
 • Splash Screen
+
+To watch the video of the application:
+https://www.linkedin.com/posts/ahmet35yildiz_android-kotlin-retrofit-activity-6993195519246233600-Fn1o?utm_source=share&utm_medium=member_desktop
+
 ## Screenshots
 
 ![Uygulama Ekran Görüntüsü](https://i.ibb.co/D585H6M/1.png) ![Uygulama Ekran Görüntüsü](https://i.ibb.co/T0gqcCy/2.png) ![Uygulama Ekran Görüntüsü](https://i.ibb.co/QJ9fSnQ/3.png)
